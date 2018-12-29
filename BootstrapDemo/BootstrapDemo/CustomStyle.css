@@ -1,7 +1,16 @@
-﻿.customDiv{
-    margin: 3px;
-    min-height: 300px;
-    background-color:silver;
-    text-align:center;
+﻿.sidebarContent {
+    height: 200px;
+    width: 300px;
+}
+.customDiv {
+    margin: 10px;
+    min-height: 50px;
+    background-color: silver;
+    text-align: center;
     font-size: large;
+    padding: 10px;
+}
+.customDiv1 {
+    margin: 10px;
+    width: 100%;
 }

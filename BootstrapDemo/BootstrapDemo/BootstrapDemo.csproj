@@ -76,6 +76,12 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\npm.js" />
     <Content Include="CustomStyle.css" />
+    <Content Include="Images\Hang Hai.jpg" />
+    <Content Include="Images\Ba Na Hills.jpg" />
+    <Content Include="Images\Da Nang beach.jpg" />
+    <Content Include="Images\Dragon Brigde.jpg" />
+    <Content Include="Images\Ha Long Bay.jpg" />
+    <Content Include="Images\Sapa VietNam.jpg" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
