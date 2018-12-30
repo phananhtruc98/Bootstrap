@@ -14,3 +14,19 @@
     margin: 10px;
     width: 100%;
 }
+
+.breadcrumb > li + li:before {
+    content: "|";
+}
+.breadcrumb {
+    background-color: lawngreen;
+}
+.breadcrumb > .active{
+    color: red;
+}
+.well {
+    background-color: lightgreen;
+}
+.jumbotron{
+    background-color: #ffd800;
+}
