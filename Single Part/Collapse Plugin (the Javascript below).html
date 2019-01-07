@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="row">
+        <br />
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <button class="btn btn-info" id="toggleButton">
+                    Toggle Image Gallery
+                </button>
+                <button class="btn btn-info" id="hideButton">
+                    Hide Image Gallery
+                </button>
+                <button class="btn btn-info" id="showButton">
+                    Show Image Gallery
+                </button>
+            </div>
+            <div class="panel-body collapse" id="imageGallery">
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                        <p>Ba Na Hills</p>
+                        <img src="Images/Sapa VietNam.jpg" />
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="Images/Da Nang beach.jpg" class="thumbnail">
+                        <p>Da Nang beach</p>
+                        <img src="Images//Sapa VietNam.jpg" />
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="Images/Dragon Brigde.jpg" class="thumbnail">
+                        <p>Dragon Brigde</p>
+                        <img src="Images/Sapa VietNam.jpg" />
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="Images/Ha Long Bay.jpg" class="thumbnail">
+                        <p>Ha Long Bay</p>
+                        <img src="Images/Sapa VietNam.jpg" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#toggleButton').click(function () {
+                $('#imageGallery').collapse('toggle');
+            });
+            $('#hideButton').click(function () {
+                $('#imageGallery').collapse('hide');
+            });
+            $('#showButton').click(function () {
+                $('#imageGallery').collapse('show');
+            });
+            $('#imageGallery').on('show.bs.collapse', function () {
+                alert('Image Gallery is about to be expanded');
+            });
+            $('#imageGallery').on('shown.bs.collapse', function () {
+                alert('Image Gallery expanded');
+            });
+            $('#imageGallery').on('hide.bs.collapse', function () {
+                alert('Image Gallery is about to be hidden');
+            });
+            $('#imageGallery').on('hidden.bs.collapse', function () {
+                alert('Image Gallery is hidden');
+            });
+        });
+
+    </script>

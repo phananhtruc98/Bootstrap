@@ -1,0 +1,155 @@
+<div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p class="h4"> === Styling inline snippets of code</p>
+                <p>To highlight text use <code>&lt;mark&gt;</code>tag</p>
+                <p>To underline text use <code>&lt;u&gt;</code>tag</p>
+                <p>For bold text use <code>&lt;strongt&gt;</code>tag</p>
+            </div>
+            <div class="col-xs-12">
+                <p class="h4"> === Styling multiple lines of code</p>
+                <pre>To highlight text use <code>&lt;mark&gt;</code>tag
+To underline text use <code>&lt;u&gt;</code> tag
+For bold text use <code>&lt;strongt&gt;</code> tag</pre>
+            </div>
+            <div class="col-xs-12">
+                <pre class="pre-scrollable">
+#region
+using System;
+using System.Data;
+using System.Data.SqlClient;
+#endregion
+
+namespace DAO
+{
+    public class DauSach_DAO : ConnectDatabase
+    {
+        public static DataTable LoadDauSach()
+        {
+            try
+            {
+                var conn = GetConnString();
+
+                var sql = "LoadDauSach";
+                SqlParameter[] pars = { };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+
+                var dataTable = new DataTable();
+                dataTable.Load(soLuongOK);
+                if (dataTable.Rows.Count > 0) return dataTable;
+
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+
+        public static DataSet LoadComBoDauSach(string tenbang)
+        {
+            try
+            {
+                var conn = GetConnString();
+
+                var sql = "SELECT * from DauSachLoai ";
+                return getdataset(sql, tenbang, _conn);
+
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+
+        public static DataTable TimSach(string mucTim, string tenTim)
+        {
+            try
+            {
+                var conn = GetConnString();
+
+                 var sql = "TimSachDeMuon";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@mucTim", SqlDbType.NVarChar) {Value = mucTim},
+                    new SqlParameter("@tenTim", SqlDbType.NVarChar) {Value = tenTim}
+                };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+
+                var dataTable = new DataTable();
+                dataTable.Load(soLuongOK);
+                if (dataTable.Rows.Count > 0) return dataTable;
+
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+
+        public static DataTable LoadSachMuon(int maDocGia)
+        {
+            try
+            {
+                var conn = GetConnString();
+
+                var sql = "LoadSachMuon";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maDocGia", SqlDbType.Int) {Value = maDocGia}
+                };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+
+                var dataTable = new DataTable();
+                dataTable.Load(soLuongOK);
+                if (dataTable.Rows.Count > 0) return dataTable;
+
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+
+        public static DataTable LoadDtgvMuon(int maSach, int maDocGia)
+        {
+            try
+            {
+                var conn = GetConnString();
+
+                var sql = "LoadDtgvMuon";
+                SqlParameter[] pars =
+                {
+                    new SqlParameter("@maSach", SqlDbType.Int) {Value = maSach},
+                    new SqlParameter("@maDocGia", SqlDbType.Int) {Value = maDocGia}
+                };
+                var soLuongOK = SqlHelper.ExecuteReader(conn, sql, CommandType.StoredProcedure, pars);
+
+                var dataTable = new DataTable();
+                dataTable.Load(soLuongOK);
+                if (dataTable.Rows.Count > 0) return dataTable;
+
+            }
+            catch (Exception e)
+            {
+            }
+
+            return null;
+        }
+    }
+}
+</pre>
+                var <var>fullName</var> = <var>firstNam</var> + <var>lastName</var>
+                <h4>Output</h4>
+                <samp>Hello world!</samp>
+            </div>
+            <div class="col-xs-12">
+                <h4>Visual Studio</h4>
+                <p>Keyboard shortcut for commenting code <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>C</kbd></p>
+                <p>Keyboard shortcut for uncommenting code <kbd>CTRL</kbd> <kbd>K</kbd> and <kbd>CTRL</kbd> <kbd>U</kbd></p>
+            </div>
+        </div>
+    </div>

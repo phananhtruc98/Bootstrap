@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <br /><br /><br />
+            <button class="btn btn-primary" id="btnPopover" title="Popover Title"
+                    data-content="<img src='Images/hi.jpg' class='img-responsive' />'"
+                    data-trigger="hover"
+                    data-html="true"
+                    data-placement="bottom"
+                    data-toggle="popover">
+                Popover Example
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnPopover').popover();
+        })
+    </script>

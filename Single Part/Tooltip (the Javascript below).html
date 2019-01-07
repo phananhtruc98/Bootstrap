@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <br />
+            <button data-placement="bottom" class="btn btn-info" data-toggle="tooltip">Button</button>
+        </div>
+    </div>
+</div>
+ <script type="text/javascript">
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: "right",
+                title: "<h3>bootstrap tooltip</h3>",
+                animation: true,
+                delay: { show: 300, hide: 500 },
+                html: true
+
+            });
+        });
+    </script>

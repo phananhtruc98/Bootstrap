@@ -1,0 +1,148 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <br />
+            <div id="accordion" class="panel-group">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody1" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-menu-up"></span>
+                                Asia
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody1" class="panel-collapse  collapse in ">
+                        <div class="panel-body">
+                            <img src="Images/Da Nang beach.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody2" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                hello
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody2" class="collapse panel-collapse">
+                        <div class="panel-body">
+                            <img src="Images/Hang Hai.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody3" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                how are you
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody3" class="collapse panel-collapse">
+                        <div class="panel-body">
+                            <img src="Images/Ha Long Bay.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div class="well">
+                <button class="btn btn-primary" id="btnExpandAll">Expand All</button>
+                <button class="btn btn-primary" id="btnCollapseAll">Collapse All</button>
+            </div>
+            <br />
+            <div id="accordion" class="panel-group">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody1" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-minus-sign"></span>
+                                Asia
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody1" class="panel-collapse  collapse ">
+                        <div class="panel-body">
+                            <img src="Images/Da Nang beach.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody2" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                hello
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody2" class="collapse panel-collapse">
+                        <div class="panel-body">
+                            <img src="Images/Hang Hai.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a href="#panelBody3" data-toggle="collapse" data-parent="#accordion">
+                                <span class="glyphicon glyphicon-plus-sign"></span>
+                                how are you
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="panelBody3" class="collapse panel-collapse">
+                        <div class="panel-body">
+                            <img src="Images/Ha Long Bay.jpg" class="img-responsive" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-up').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+            });
+        })
+    </script>
+	
+	
+	 <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-down').removeClass('glyphicon-menu-down').addClass('glyphicon-menu-up');
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-menu-up').removeClass('glyphicon-menu-up').addClass('glyphicon-menu-down');
+            });
+        })
+    </script>-->
+    <!--<script type="text/javascript">
+        $(document).ready(function () {
+            $('.collapse').on('shown.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-plus-sign').removeClass('glyphicon-plus-sign').addClass('glyphicon-minus-sign');
+            }).on('hidden.bs.collapse', function () {
+                $(this).parent().find('.glyphicon-minus-sign').removeClass('glyphicon-minus-sign').addClass('glyphicon-plus-sign');
+            })
+            $('#btnExpandAll').click(function () {
+                $('.panel-collapse.collapse').collapse('show');
+            });
+            $('#btnCollapseAll').click(function () {
+                $('.panel-collapse.collapse').collapse('hide');
+            });
+        });
+    </script>-->

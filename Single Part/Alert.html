@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <br /><br />
+
+            <button id="btnSubmit" class="btn btn-primary">Submit</button>
+            <br /><br />
+            <div id="myAlert" class="alert alert-danger collapse">
+                <a id="linkClose" href="#" class="close">&times;</a>
+                <strong>Error!</strong> There is a problem summitting your form
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                $('#myAlert').show('fade');
+
+                setTimeout(function () {
+                    $('#myAlert').hide('fade');
+                }, 2000);
+            });
+            $('#linkClose').click(function () {
+                $('#myAlert').hide('fade');
+            });
+        });
+    </script>

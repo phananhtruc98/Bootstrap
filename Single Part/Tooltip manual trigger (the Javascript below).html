@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <br /><br /><br />
+            Name: <input type="text" id="txtName" title="Bootstrap tooltip"
+                         data-toggle="tooltip" />
+            <span class="glyphicon glyphicon-info-sign" id="infoIcon"></span>
+        </div>
+    </div>
+</div>
+
+ <script type="text/javascript">
+        $(document).ready(function () {
+            $('#txtName').tooltip({
+                trigger: 'manual'
+            });
+            $('#infoIcon').hover(function () {
+                $('#txtName').tooltip('toggle');
+            });
+        });
+    </script>

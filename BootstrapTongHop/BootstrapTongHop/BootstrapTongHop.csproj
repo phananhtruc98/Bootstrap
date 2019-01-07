@@ -7,12 +7,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{5054DEC4-70B1-4084-A33C-0FDE59E4398D}</ProjectGuid>
+    <ProjectGuid>{0E94867B-6C55-4651-B3B6-C76A4A68D7FD}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BootstrapDemo</RootNamespace>
-    <AssemblyName>BootstrapDemo</AssemblyName>
+    <RootNamespace>BootstrapTongHop</RootNamespace>
+    <AssemblyName>BootstrapTongHop</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -76,13 +76,8 @@
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\npm.js" />
     <Content Include="CustomStyle.css" />
-    <Content Include="Images\Hang Hai.jpg" />
-    <Content Include="Images\Ba Na Hills.jpg" />
-    <Content Include="Images\Da Nang beach.jpg" />
-    <Content Include="Images\Dragon Brigde.jpg" />
-    <Content Include="Images\Ha Long Bay.jpg" />
-    <Content Include="Images\hi.jpg" />
-    <Content Include="Images\Sapa VietNam.jpg" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="Images\search.png" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -119,9 +114,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>51261</DevelopmentServerPort>
+          <DevelopmentServerPort>60981</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:51261/</IISUrl>
+          <IISUrl>http://localhost:60981/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

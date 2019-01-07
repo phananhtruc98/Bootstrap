@@ -1,0 +1,73 @@
+﻿.jumbotron{
+    background-color: #ff7b29;
+    padding-bottom:0px;
+    padding-top:5px;
+    margin-bottom:0px;
+}
+.jumbotron .h1, .h3{
+    color: white;
+}
+.jumbotron .h1 {
+    font-size: 50px;
+}
+.navbar-toggle{
+    top: 0;
+}
+.col-lg-6{
+    height: 100px;
+    padding-left:0px;
+    padding-right:0px;
+}
+.col-lg-6 .h3{
+    font-size:20px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+.pull-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+}
+
+.tabs-left {
+    border-bottom: none;
+    padding-top: 2px;
+}
+
+.tabs-left {
+    border-right: 1px solid #ddd;
+}
+
+
+.tabs-left > li {
+    float: none;
+    margin-bottom: 2px;
+}
+
+.tabs-left > li {
+    margin-right: -1px;
+}
+
+.tabs-left > li.active > a,
+.tabs-left > li.active > a:hover,
+.tabs-left > li.active > a:focus {
+    border-bottom-color: #ddd;
+    border-right-color: transparent;
+}
+.tabs-left > li > a {
+    border-radius: 4px 0 0 4px;
+    margin-right: 0;
+    display: block;
+}
+
+.main {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.example {
+    border: 2px solid #ff7b29;
+    padding-left: 20px;
+}
