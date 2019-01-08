@@ -71,3 +71,16 @@
     border: 2px solid #ff7b29;
     padding-left: 20px;
 }
+.tab-content p {
+    font-size: 1vw;
+}
+.tab-content h1{
+    font-size: 4vw;
+}
+.tab-content h2 {
+    font-size: 3vw;
+}
+.img-shapes {
+    height:200px;
+    width:200px
+}

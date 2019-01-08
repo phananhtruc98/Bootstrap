@@ -8,10 +8,10 @@
     <title>Bootstrap 101 Template</title>
 
     <!-- Bootstrap -->
-    
+
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CustomStyle.css" rel="stylesheet" />
-    
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,6 +20,7 @@
     <![endif]-->
 </head>
 <body>
+  
     <!--Header-->
     <!--Jumbotron-->
     <div class="jumbotron">
@@ -182,7 +183,25 @@
 
     <!--Container-->
     <div class="col-sm-12 main">
-        <div class="col-xs-3">
+        <div class="col-xs-3 visible-xs">
+            <!-- required for floating -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs tabs-left sideways icon-bar">
+                <li class="active"><a href="#Typography" data-toggle="tab"><span class="glyphicon glyphicon-font"></span></a></li>
+                <li><a href="#Tables" data-toggle="tab"><span class="glyphicon glyphicon-font"></span></a></li>
+                <li><a href="#Images" data-toggle="tab">1</a></li>
+                <li><a href="#Wells" data-toggle="tab">2</a></li>
+                <li><a href="#Wells" data-toggle="tab">3</a></li>
+                <li><a href="#Wells" data-toggle="tab">4</a></li>
+                <li><a href="#Wells" data-toggle="tab">5</a></li>
+                <li><a href="#Wells" data-toggle="tab">6</a></li>
+                <li><a href="#Wells" data-toggle="tab">7</a></li>
+                <li><a href="#Wells" data-toggle="tab">8</a></li>
+                <li><a href="#Wells" data-toggle="tab">9</a></li>
+                <li><a href="#Wells" data-toggle="tab">10</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-3 hidden-xs">
             <!-- required for floating -->
             <!-- Nav tabs -->
             <ul class="nav nav-tabs tabs-left sideways">
@@ -190,14 +209,31 @@
                 <li><a href="#Tables" data-toggle="tab">Tables</a></li>
                 <li><a href="#Images" data-toggle="tab">Images</a></li>
                 <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
-                <li><a href="#Wells" data-toggle="tab">Wells</a></li>
+                <li><a href="#Alerts" data-toggle="tab">Alerts</a></li>
+                <li><a href="#Buttons" data-toggle="tab">Buttons</a></li>
+                <li><a href="#ButtonsGroups" data-toggle="tab">Buttons Group</a></li>
+                <li><a href="#Glyphicons" data-toggle="tab">Glyphicons</a></li>
+                <li><a href="#Badges/Labels" data-toggle="tab">Badges/Labels</a></li>
+                <li><a href="#Progress Bars" data-toggle="tab">Progress Bars</a></li>
+                <li><a href="#Pagination" data-toggle="tab">Pagination</a></li>
+                <li><a href="#Pager" data-toggle="tab">Pager</a></li>
+                <li><a href="#List Groups" data-toggle="tab">List Groups</a></li>
+                <li><a href="#Panels" data-toggle="tab">Panels</a></li>
+                <li><a href="#Dropdowns" data-toggle="tab">Dropdowns</a></li>
+                <li><a href="#Collapse" data-toggle="tab">Collapse</a></li>
+                <li><a href="#Tabs/Pills" data-toggle="tab">Tabs/Pills</a></li>
+                <li><a href="#Navbar" data-toggle="tab">Navbar</a></li>
+                <li><a href="#Forms" data-toggle="tab">Forms</a></li>
+                <li><a href="#Input" data-toggle="tab">Input</a></li>
+                <li><a href="#MediaOjects" data-toggle="tab">Media Ojects</a></li>
+                <li><a href="#Carousel" data-toggle="tab">Carousel</a></li>
+                <li><a href="#Modal" data-toggle="tab">Modal</a></li>
+                <li><a href="#Tooltip" data-toggle="tab">Tooltip</a></li>
+                <li><a href="#Popover" data-toggle="tab">Popover</a></li>
+                <li><a href="#Scrollspy" data-toggle="tab">Scrollspy</a></li>
+                <li><a href="#Affix" data-toggle="tab">Affix</a></li>
+                <li><a href="#Filters" data-toggle="tab">Filters</a></li>
+
             </ul>
         </div>
 
@@ -297,16 +333,717 @@ line breaks.
                     <br /><br /><br /><br /><br />
 
                 </div>
+
                 <div class="tab-pane" id="Tables">
-                    
+                    <h2>Basic Table</h2>
+                    <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Pagination Table</h2>
+                    <div class="table-responsive">
+                        <table class="table" id="example-two">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Striped Rows</h2>
+                    <p>The .table-striped class adds zebra-stripes to a table:</p>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Bordered Table</h2>
+                    <p>The .table-bordered class adds borders to a table:</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Hover Rows</h2>
+                    <p>The .table-hover class enables a hover state on table rows:</p>
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Condensed Table</h2>
+                    <p>The .table-condensed class makes a table more compact by cutting cell padding in half:</p>
+                    <div class="table-responsive">
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h2>Contextual Classes</h2>
+                    <p>Contextual classes can be used to color table rows (&lt;tr&gt;) or table cells (&lt;td&gt;):</p>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Gender</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="active">
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr class="danger">
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr class="info">
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                <tr class="warning">
+                                    <td>2</td>
+                                    <td>Phan Anh Truc</td>
+                                    <td>Female</td>
+                                    <td>anhtrucphanit@gmail.com</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
+
                 <div class="tab-pane" id="Images">
-                    
+                    <div class="row">
+                        <h2>Bootstrap Image Shapes</h2>
+                        <div class="col-lg-4 col-md-4 col-sm-6 ">
+                            <p>Circle: </p>
+                            <img src="Images/Ba Na Hills.jpg" class="img-circle img-shapes" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 ">
+                            <p>Rounded Corners:</p>
+                            <img src="Images/Ba Na Hills.jpg" class="img-rounded img-shapes" />
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 ">
+                            <p>Thumbnail: </p>
+                            <img src="Images/Ba Na Hills.jpg" class="img-thumbnail img-shapes" />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Image Gallery</h2>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 ">
+                            <a href="Images/Ba Na Hills.jpg" class="thumbnail">
+                                <p>Ba Na Hills</p>
+                                <img src="Images/Ba Na Hills.jpg" />
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <h2>Responsive Embed</h2>
+                        <p>Create a responsive video and scale it nicely to the parent element.</p>
+
+                        <h2>Aspect ratio 4:3</h2>
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/watch?v=ktqCUUylCic&start_radio=1&list=RDktqCUUylCic"></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tab-pane" id="Wells">
+                    <h2>Well</h2>
+                    <p>Change the size of the well by adding the <code>.well-sm</code> class for small wells or  <code>.well-lg</code> class for large wells:</p>
+                    <div class="example">
+                        <br />
+                        <div class="well well-sm">Small Well</div>
+                        <div class="well">Normal Well</div>
+                        <div class="well well-lg">Large Well</div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="Alerts">
+                    <div class="row">
+                        <h2>Alerts</h2>
+                        <p>Bootstrap provides an easy way to create predefined alert messages:</p>
+                        <div class="example">
+                            <br />
+                            <div class="alert alert-success">
+                                <strong>Success!</strong> Indicates a successful or positive action.
+                            </div>
+
+                            <div class="alert alert-info">
+                                <strong>Info!</strong> Indicates a neutral informative change or action.
+                            </div>
+
+                            <div class="alert alert-warning">
+                                <strong>Warning!</strong> Indicates a warning that might need attention.
+                            </div>
+
+                            <div class="alert alert-danger">
+                                <strong>Danger!</strong> Indicates a dangerous or potentially negative action.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Alert Links</h2>
+                        <p>Add the <code>alert-link</code> class to any links inside the alert box to create "matching colored links":</p>
+                        <div class="example">
+                            <br />
+                            <div class="alert alert-success">
+                                <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Closing Alerts</h2>
+                        <p>To close the alert message, add a <code>.alert-dismissible</code> class to the alert container. Then add <code>class="close"</code> and <code>data-dismiss="alert"</code> to a link or a button element (when you click on this the alert box will disappear).</p>
+                        <div class="example">
+                            <br />
+                            <div class="alert alert-success alert-dismissible">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Success!</strong> Indicates a successful or positive action.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2>Animated Alerts</h2>
+                        <p>The <code>.fade</code> and <code>.in</code> classes adds a fading effect when closing the alert message:</p>
+                        <div class="example">
+                            <br />
+                            <div class="alert alert-success alert-dismissible fade in">
+                                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                                <strong>Success!</strong> Indicates a successful or positive action.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="Buttons">
+                    <div class="row">
+                        <h2>Button Styles</h2>
+                        <p>
+                            Bootstrap has the following classes: <code>.btn</code> <code>.btn-default</code> <code>.btn-primary</code>
+                            <code>.btn-success</code>
+                            <code>.btn-info</code>
+                            <code>.btn-warning</code>
+                            <code>.btn-danger</code>
+                            <code>.btn-link</code>
+                        </p>
+                        <div class="example">
+                            <br />
+                            <button type="button" class="btn">Basic</button>
+                            <button type="button" class="btn btn-default">Default</button>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-success">Success</button>
+                            <button type="button" class="btn btn-info">Info</button>
+                            <button type="button" class="btn btn-warning">Warning</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <button type="button" class="btn btn-link">Link</button>
+                            <br /><br /><br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Button Sizes</h2>
+                        <p>Bootstrap provides four button sizes:</p>
+                        The classes that define the different sizes are:
+                        <code>.btn-lg</code>
+                        <code>.btn-md</code>
+                        <code>.btn-sm</code>
+                        <code>.btn-xs</code>
+                        <p>The following example shows the code for different button sizes:</p>
+                        <div class="example">
+                            <br />
+                            <button type="button" class="btn btn-primary btn-lg">Large</button>
+                            <button type="button" class="btn btn-primary btn-md">Medium</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small</button>
+                            <button type="button" class="btn btn-primary btn-xs">XSmall</button>
+                            <br /><br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Block Level Buttons</h2>
+                        <p>A block level button spans the entire width of the parent element.</p>
+                        <p>Add class <code>.btn-block</code> to create a block level button:</p>
+                        <div class="example">
+                            <br />
+                            <button type="button" class="btn btn-primary btn-block">Button 1</button>
+                            <button type="button" class="btn btn-default btn-block">Button 1</button>
+                            <br /><br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Active/Disabled Buttons</h2>
+                        <p>A button can be set to an active (appear pressed) or a disabled (unclickable) state:</p>
+                        <p>The class <code>.active</code> makes a button appear pressed, and the class <code>.disabled</code> makes a button unclickable:</p>
+                        <div class="example">
+                            <br />
+                            <button type="button" class="btn btn-primary active">Active Primary</button>
+                            <button type="button" class="btn btn-primary disabled">Disabled Primary</button>
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="ButtonsGroups">
+                    <div class="row">
+                        <h2>Button Groups</h2>
+                        <p>Bootstrap allows you to group a series of buttons together (on a single line) in a button group</p>
+                        <p>Use a &lt;div&gt; element with class <code>.btn-group</code> to create a button group:</p>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                            <br /><br />
+                        </div>
+                        <p>Tip: Instead of applying button sizes to every button in a group, use class <code>.btn-group-lg|sm|xs</code>to size all buttons in the group:</p>
+                        <div class="example">
+                            <div class="btn-group btn-group-lg">
+                                <br />
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                                <br /><br /><br /><br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Vertical Button Groups</h2>
+                        <p>Bootstrap also supports vertical button groups:</p>
+                        <p>Use the class <code>.btn-group-vertical</code> to create a vertical button group:</p>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Justified Button Groups</h2>
+                        <p>To span the entire width of the screen, use the <code>.btn-group-justified</code> class:</p>
+                        <p>Example with &lt;a&gt; elements:</p>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group btn-group-justified">
+                                <a href="#" class="btn btn-primary">Apple</a>
+                                <a href="#" class="btn btn-primary">Samsung</a>
+                                <a href="#" class="btn btn-primary">Sony</a>
+                            </div>
+                            <br /><br />
+                        </div>
+                        <p>
+                            Note: For &lt;button&gt; elements, you must wrap each button in a .btn-group class:
+                        </p>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group btn-group-justified">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Apple</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Samsung</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Sony</button>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Nesting Button Groups & Dropdown Menus</h2>
+                        <p>Nest button groups to create dropdown menus:</p>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        Sony <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Tablet</a></li>
+                                        <li><a href="#">Smartphone</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2>Split Button Dropdowns</h2>
+                        <div class="example">
+                            <br />
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Sony</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Tablet</a></li>
+                                    <li><a href="#">Smartphone</a></li>
+                                </ul>
+                            </div>
+                            <br /><br />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="Wells">
+
                 </div>
                 <div class="tab-pane" id="Wells">
-                    
+
                 </div>
-            </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                <div class="tab-pane" id="Wells">
+
+                </div>
+                </div>
         </div>
 
         <div class="clearfix"></div>

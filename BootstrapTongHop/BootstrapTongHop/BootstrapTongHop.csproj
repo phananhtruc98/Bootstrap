@@ -71,13 +71,20 @@
     <Content Include="bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
     <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\dataTables.bootstrap.min.css" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\dataTables.bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.3.1.js" />
+    <Content Include="bootstrap\js\jquery.dataTables.min.js" />
     <Content Include="bootstrap\js\npm.js" />
     <Content Include="CustomStyle.css" />
     <Content Include="HtmlPage1.html" />
-    <Content Include="Images\search.png" />
+    <Content Include="Images\Ba Na Hills.jpg" />
+    <Content Include="Images\Da Nang beach.jpg" />
+    <Content Include="Images\Dragon Brigde.jpg" />
+    <Content Include="Images\search.ico" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -94,6 +101,7 @@
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
